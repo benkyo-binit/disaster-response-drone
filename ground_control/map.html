@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drone Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<div id="map"></div>
+
+<script>
+    var map = L.map('map').setView([27.7172, 85.3240], 13); // Kathmandu default
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    var marker = L.marker([27.698968, 85.297184]).addTo(map);
+
+    function updateLocation(lat, lon) {
+        marker.setLatLng([lat, lon]);
+        map.setView([lat, lon]);
+    }
+
+    function addEvent(lat, lon, text) {
+        var newMarker = L.marker([lat, lon]).addTo(map);
+        newMarker.bindPopup(text).openPopup();
+    }
+</script>
+
+<script>
+    function updateLocation(lat, lon) {
+        marker.setLatLng([lat, lon]);
+        map.setView([lat, lon]);
+    }
+</script>
+
+
+</body>
+</html>

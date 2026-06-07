@@ -41,19 +41,9 @@ This project aims to assist disaster response operations by providing live aeria
 * RTMP Streaming
 * GPS Integration
 
-## Workflow
+## System Flow
 
-Drone Camera
-↓
-Raspberry Pi
-↓
-4G Network
-↓
-Ground Control Station
-├── Live Video Feed
-├── GPS Tracking
-├── Event Logging
-└── AI Analysis
+Drone Camera -> Raspberry Pi -> 4G Network -> Ground Control Station
 
 ## Current Development
 

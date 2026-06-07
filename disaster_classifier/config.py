@@ -1,0 +1,9 @@
+CSV_PATH = "dataset/dataset_cleaned.csv"
+IMAGE_FOLDER = "dataset/disaster_frames"
+BATCH_SIZE = 32
+NUM_EPOCHS = 30
+LEARNING_RATE = 0.0001
+IMAGE_SIZE = 224
+TRAIN_RATIO = 0.7
+VAL_RATIO = 0.15
+SEED = 42

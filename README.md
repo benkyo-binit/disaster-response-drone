@@ -12,5 +12,53 @@ This project aims to assist disaster response operations by providing live aeria
 * Custom Ground Control Station (GCS)
 * GPS visualization and tracking
 * Geotagged event logging
+* Dataset collection for AI training
 * Disaster scene classification
 * Modular software architecture
+
+## System Components
+
+### Drone System
+
+* Raspberry Pi
+* Camera Module
+* GPS Module
+* 4G Connectivity
+
+### Ground Control Station
+
+* Live video monitoring
+* GPS map display
+* Event logging dashboard
+* AI analysis interface
+
+## Technologies Used
+
+* Python
+* Raspberry Pi
+* PyTorch
+* OpenCV
+* RTMP Streaming
+* GPS Integration
+
+## Workflow
+
+Drone Camera
+↓
+Raspberry Pi
+↓
+4G Network
+↓
+Ground Control Station
+├── Live Video Feed
+├── GPS Tracking
+├── Event Logging
+└── AI Analysis
+
+## Current Development
+
+* Ground Control Station development
+* AI model training and evaluation
+* Sensor integration
+* Streaming optimization
+
